@@ -1,0 +1,49 @@
+.deletion-message {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  margin-top: 300px;
+  margin-bottom: 300px;
+  border: 2px solid #151515;
+}
+.deletion-top {
+  display: flex;
+  width: 100%;
+  height: 15px;
+  border-bottom: 2px solid #151515;
+}
+.deletion-main {
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff80;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28.5px;
+  font-weight: 900;
+  font-family: "Bangers";
+}
+
+.deletion-red {
+  background-color: #d52438;
+  mix-blend-mode: multiply;
+  width: 10%;
+}
+
+.deletion-white {
+  background-color: #ffffff;
+  mix-blend-mode: soft-light;
+  width: 10%;
+}
+
+.deletion-blue {
+  background-color: #5478c1;
+  mix-blend-mode: multiply;
+  width: 10%;
+}
+
+.deletion-light-blue {
+  background-color: #afdaf8;
+  mix-blend-mode: multiply;
+  width: 70%;
+}
