@@ -1,0 +1,51 @@
+.home {
+  background-image: url("../img/background.png");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+.home-title {
+  font-size: 144.56px;
+  letter-spacing: -0.05em;
+  font-weight: 900;
+  font-family: "TT Backwards Sans Trial";
+  color: #fff;
+  text-align: center;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30vh;
+}
+.home-button {
+  max-width: fit-content;
+  max-height: fit-content;
+  border-radius: 22.92px;
+  background-color: #fbf540;
+  border: 3.8px solid #151515;
+  padding: 15.3px 39px 10px 39px;
+  font-size: 23.84px;
+  letter-spacing: -0.05em;
+  color: #151515;
+  font-family: "TT Backwards Sans Trial";
+}
+
+.home-moving-thing {
+  position: absolute;
+  right: calc(50% - 207px);
+  width: 414px;
+}
+
+.home-bubble {
+  position: absolute;
+  width: 300px;
+  transform: translateY(-100px);
+  left: calc(50% - 557px);
+}
+.home-bubble2 {
+  position: absolute;
+  width: 300px;
+  right: calc(50% - 537px);
+}

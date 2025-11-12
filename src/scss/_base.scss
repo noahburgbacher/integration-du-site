@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+video {
+  display: block;
+}
+
+body {
+  overflow-x: hidden;
+  scrollbar-width: none; /* Firefox */
+  background-image: url("../img/background pattern.png");
+  background-size: 50%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
