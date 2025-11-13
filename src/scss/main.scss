@@ -6,3 +6,29 @@
 
 @import "modules/imageandbubble";
 @import "modules/deletion";
+@import "modules/bookdetails";
+@import "modules/footer";
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url("../fonts/Coolvetica.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT Backwards Sans Trial Thin";
+  src: url("../fonts/tt_backwards_sans_thin.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Backwards Sans Trial";
+  src: url("../fonts/tt_backwards_sans_black.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");

@@ -1,0 +1,36 @@
+footer {
+  background-color: black;
+  color: white;
+  padding-top: 36px;
+  font-family: "Coolvetica", sans-serif;
+  font-size: 16px;
+}
+.footer-container {
+  width: 83.3333333333vw;
+  margin-left: 8.3333333333vw;
+  padding-top: 42px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  h5 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
+  h5,
+  p,
+  div,
+  a {
+    width: 33.3333vw;
+    height: 36px;
+    margin-bottom: 50px;
+  }
+  .footer-third-column {
+    width: 16.6666vw;
+  }
+}
+.footer-logo {
+  position: relative;
+  left: 8.3333vw;
+  width: 150px;
+}

@@ -1,0 +1,68 @@
+.bookdetails {
+  background-color: white;
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+.bookdetails h2 {
+  font-size: 48px;
+  margin-bottom: 70px;
+  position: relative;
+  left: 8.3333333333%;
+  font-family: "TT Backwards Sans Trial";
+  i {
+    font-family: "TT Backwards Sans Trial Thin";
+  }
+}
+
+.bookdetails-container {
+  width: 83.3333333333%;
+  position: relative;
+  left: 8.3333333333%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bookdetails-mockup {
+  width: 33.3333333333vw;
+}
+.bookdetails-details-container {
+  width: 41.6666666667vw;
+  display: flex;
+  flex-wrap: wrap;
+  height: 42vw;
+}
+.bookdetails-detail-container {
+  width: 25vw;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  h4 {
+    font-family: "TT Backwards Sans Trial";
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+}
+.bookdetails-detail-container:nth-child(3) {
+  width: 16.66666666vw;
+}
+.bookdetails-buttons {
+  height: 48px;
+  border-radius: 22.92px;
+  background-color: #fbf540;
+  border: 3.8px solid #151515;
+  font-size: 23.84px;
+  letter-spacing: -0.05em;
+  padding: 5px 20px 0px 20px;
+  color: #151515;
+  font-family: "TT Backwards Sans Trial";
+  margin-right: 20px;
+  margin-bottom: 28px;
+}
+.bookdetails-buy-text {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 28px;
+}
