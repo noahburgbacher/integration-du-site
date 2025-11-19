@@ -22,7 +22,7 @@
 .home-button {
   max-width: fit-content;
   max-height: fit-content;
-  border-radius: 22.92px;
+  border-radius: 22px;
   background-color: #fbf540;
   border: 3.8px solid #151515;
   padding: 15.3px 39px 10px 39px;
@@ -30,6 +30,13 @@
   letter-spacing: -0.05em;
   color: #151515;
   font-family: "TT Backwards Sans Trial";
+  transition: all 0.2s ease;
+  box-shadow: #151515 0px 0px 0px 0px;
+}
+.home-button:hover {
+  cursor: pointer;
+  box-shadow: #151515 0px 12px 0px 0px;
+  transform: translateY(-12px);
 }
 
 .home-moving-thing {

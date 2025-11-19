@@ -60,6 +60,13 @@
   font-family: "TT Backwards Sans Trial";
   margin-right: 20px;
   margin-bottom: 28px;
+  box-shadow: #151515 0px 0px 0px 0px;
+  transition: all 0.2s ease;
+}
+.bookdetails-buttons:hover {
+  cursor: pointer;
+  box-shadow: #151515 0px 8px 0px 0px;
+  transform: translateY(-8px);
 }
 .bookdetails-buy-text {
   width: 100%;

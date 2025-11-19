@@ -24,3 +24,13 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+*:not(:has(*)) {
+  transition: filter 0.3s ease;
+  filter: drop-shadow(0px 0px 0px #00000008) brightness(0.97);
+}
+/* Éléments qui n'ont pas d'enfants */
+*:not(:has(*)):hover {
+  /* styles */
+  filter: drop-shadow(0px 0px 128px #00000058) brightness(1.07);
+  // z-index: 3;
+}
