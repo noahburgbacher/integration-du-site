@@ -1,0 +1,28 @@
+// .loading {
+//   font-family: sans-serif;
+//   position: fixed;
+//   width: 80%;
+//   top: 50%;
+//   left: 10%;
+// }
+.loading-bar {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+  height: 13px;
+  background-color: #7ebdeb;
+  padding: 3px;
+}
+.loading-bar-progress {
+  height: 100%;
+  width: 0px;
+  background-color: black;
+  transition: width 0.1s ease;
+}
+.loading-percentage {
+  text-align: center;
+  width: 100%;
+  margin-top: 15px;
+  font-family: Bangers;
+  font-size: 36px;
+}
