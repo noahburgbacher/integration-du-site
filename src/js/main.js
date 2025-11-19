@@ -112,3 +112,384 @@ ScrollTrigger.create({
   onEnterBack: showDeleteMessage,
   onLeaveBack: hideDeleteMessage,
 });
+
+// ========== ANIMATIONS PARALLAX & TRANSLATIONS ==========
+
+// Home section - Titre principal
+gsap.fromTo(
+  ".home-title",
+  { y: 20, opacity: 1 },
+  {
+    y: -60,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".home",
+      start: "center center",
+      end: "bottom center",
+      scrub: 1,
+      markers: false,
+    },
+  }
+);
+
+// Home section - Bulles et éléments flottants
+gsap.fromTo(
+  ".home-bubble",
+  { y: 0, rotation: -20 },
+  {
+    y: -120,
+    rotation: 10,
+    scrollTrigger: {
+      trigger: ".home",
+      start: "top center",
+      end: "bottom top",
+      scrub: 1,
+      markers: false,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".home-bubble2",
+  { y: 0, rotation: 10 },
+  {
+    y: -90,
+    rotation: -20,
+    scrollTrigger: {
+      trigger: ".home",
+      start: "top center",
+      end: "bottom center",
+      scrub: 1,
+      markers: false,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".home-moving-thing",
+  { y: 50 },
+  {
+    y: -100,
+    scrollTrigger: {
+      trigger: ".home",
+      start: "center 50%",
+      end: "bottom top",
+      scrub: 1,
+      markers: false,
+    },
+  }
+);
+
+// ========== Section 1: imageandbubble-section1 ==========
+gsap.fromTo(
+  ".imageandbubble-image",
+  { y: -400 },
+  {
+    y: 0,
+    scrollTrigger: {
+      trigger: ".imageandbubble-image",
+      start: "top bottom",
+      end: "200% top",
+      scrub: 1,
+      markers: false,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".imageandbubble-bubble3",
+  { y: 0, rotation: 0 },
+  {
+    y: -105,
+    rotation: 35,
+    scrollTrigger: {
+      trigger: ".imageandbubble-bubble3",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1,
+      markers: false,
+    },
+  }
+);
+
+// ========== Section 2: imageandbubble-section2 ==========
+gsap.fromTo(
+  ".imageandbubble-image1",
+  { x: 0 },
+  {
+    x: -75,
+    scrollTrigger: {
+      trigger: ".imageandbubble-image1",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1,
+      markers: false,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".imageandbubble-bubble4",
+  { y: 0, rotation: 24 },
+  {
+    rotation: -24,
+    scrollTrigger: {
+      trigger: ".imageandbubble-bubble4",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1,
+      markers: false,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".imageandbubble-bubble5",
+  { y: 30, rotation: 30 },
+  {
+    y: -50,
+    rotation: -15,
+    scrollTrigger: {
+      trigger: ".imageandbubble-bubble5",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1,
+      markers: false,
+    },
+  }
+);
+
+// ========== Section 3: imageandbubble-section3 ==========
+gsap.fromTo(
+  ".imageandbubble-image2",
+  { x: 0 },
+  {
+    x: -100,
+    scrollTrigger: {
+      trigger: ".imageandbubble-image2",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1,
+      markers: false,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".imageandbubble-image3",
+  { x: 0 },
+  {
+    x: 100,
+    scrollTrigger: {
+      trigger: ".imageandbubble-image3",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1,
+      markers: false,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".imageandbubble-image4",
+  { x: 0 },
+  {
+    x: -125,
+    scrollTrigger: {
+      trigger: ".imageandbubble-image4",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1,
+      markers: false,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".imageandbubble-image5",
+  { x: 0 },
+  {
+    x: 45,
+    scrollTrigger: {
+      trigger: ".imageandbubble-image5",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1,
+      markers: false,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".imageandbubble-image6",
+  { x: 0 },
+  {
+    x: -60,
+
+    scrollTrigger: {
+      trigger: ".imageandbubble-image6",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1,
+      markers: false,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".imageandbubble-image7",
+  { x: 0 },
+  {
+    x: 75,
+    scrollTrigger: {
+      trigger: ".imageandbubble-image7",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1,
+      markers: false,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".imageandbubble-image8",
+  { x: 0 },
+  {
+    x: -45,
+    scrollTrigger: {
+      trigger: ".imageandbubble-image8",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1,
+      markers: false,
+    },
+  }
+);
+
+// Bulles section 3
+gsap.fromTo(
+  ".imageandbubble-bubble6",
+  { y: 0, rotation: 0 },
+  {
+    y: 120,
+    x: 120,
+    rotation: 30,
+    scrollTrigger: {
+      trigger: ".imageandbubble-bubble6",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1,
+      markers: false,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".imageandbubble-bubble7",
+  { y: 0, rotation: 0 },
+  {
+    y: 105,
+    rotation: 10,
+    scrollTrigger: {
+      trigger: ".imageandbubble-bubble7",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1,
+      markers: false,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".imageandbubble-bubble8",
+  { y: 0, rotation: 0 },
+  {
+    y: 70,
+    rotation: 24,
+    scrollTrigger: {
+      trigger: ".imageandbubble-bubble8",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1,
+      markers: false,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".imageandbubble-bubble9",
+  { y: 0, rotation: -20 },
+  {
+    y: 90,
+    rotation: 16,
+    scrollTrigger: {
+      trigger: ".imageandbubble-bubble9",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1,
+      markers: false,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".imageandbubble-bubble10",
+  { y: 500, rotation: 0 },
+  {
+    y: -50,
+    rotation: 18,
+    scrollTrigger: {
+      trigger: ".imageandbubble-bubble10",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1,
+      markers: false,
+    },
+  }
+);
+
+// ========== Section Book Details - Titre et image ==========
+gsap.fromTo(
+  ".bookdetails h2",
+  { y: 0 },
+  {
+    y: 45,
+    scrollTrigger: {
+      trigger: ".bookdetails h2",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1,
+      markers: false,
+    },
+  }
+);
+gsap.fromTo(
+  ".bookdetails h2",
+  { opacity: 0 },
+  {
+    opacity: 1,
+    scrollTrigger: {
+      trigger: ".bookdetails h2",
+      start: "bottom bottom",
+      end: "bottom 80%",
+      scrub: 1,
+      markers: false,
+    },
+  }
+);
+
+// ========== Footer ==========
+gsap.fromTo(
+  ".footer-logo",
+  { y: 0, opacity: 0 },
+  {
+    opacity: 1,
+    scrollTrigger: {
+      trigger: ".footer-logo",
+      start: "bottom bottom",
+      end: "bottom 80%",
+      scrub: 1,
+      markers: false,
+    },
+  }
+);
