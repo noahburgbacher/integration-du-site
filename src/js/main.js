@@ -2,12 +2,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-// Reduce motion for users who prefer it
-const prefersReducedMotion = window.matchMedia(
-  "(prefers-reduced-motion: reduce)"
-).matches;
-const scrubValue = prefersReducedMotion ? 0 : 1;
-
 const loadingWrapper =
   document.querySelector(".deletion") ||
   document.querySelector(".loading-bar-progress");
@@ -80,7 +74,7 @@ gsap.fromTo(
       trigger: "#trigger2",
       start: "center 40%",
       end: "center top",
-      scrub: scrubValue,
+      scrub: true,
       pin: true,
       onUpdate: (self) => {
         const percent = (self.progress * 100).toFixed(2);
@@ -132,7 +126,8 @@ gsap.fromTo(
       trigger: ".home",
       start: "center center",
       end: "bottom center",
-      scrub: scrubValue,
+      scrub: 1,
+      markers: false,
     },
   }
 );
@@ -148,7 +143,8 @@ gsap.fromTo(
       trigger: ".home",
       start: "top center",
       end: "bottom top",
-      scrub: scrubValue,
+      scrub: 1,
+      markers: false,
     },
   }
 );
@@ -163,7 +159,8 @@ gsap.fromTo(
       trigger: ".home",
       start: "top center",
       end: "bottom center",
-      scrub: scrubValue,
+      scrub: 1,
+      markers: false,
     },
   }
 );
@@ -177,7 +174,8 @@ gsap.fromTo(
       trigger: ".home",
       start: "center 50%",
       end: "bottom top",
-      scrub: scrubValue,
+      scrub: 1,
+      markers: false,
     },
   }
 );
@@ -192,7 +190,8 @@ gsap.fromTo(
       trigger: ".imageandbubble-image",
       start: "top bottom",
       end: "200% top",
-      scrub: scrubValue,
+      scrub: 1,
+      markers: false,
     },
   }
 );
@@ -207,7 +206,8 @@ gsap.fromTo(
       trigger: ".imageandbubble-bubble3",
       start: "top bottom",
       end: "bottom top",
-      scrub: scrubValue,
+      scrub: 1,
+      markers: false,
     },
   }
 );
@@ -222,7 +222,8 @@ gsap.fromTo(
       trigger: ".imageandbubble-image1",
       start: "top bottom",
       end: "bottom top",
-      scrub: scrubValue,
+      scrub: 1,
+      markers: false,
     },
   }
 );
@@ -236,7 +237,8 @@ gsap.fromTo(
       trigger: ".imageandbubble-bubble4",
       start: "top bottom",
       end: "bottom top",
-      scrub: scrubValue,
+      scrub: 1,
+      markers: false,
     },
   }
 );
@@ -251,7 +253,8 @@ gsap.fromTo(
       trigger: ".imageandbubble-bubble5",
       start: "top bottom",
       end: "bottom top",
-      scrub: scrubValue,
+      scrub: 1,
+      markers: false,
     },
   }
 );
@@ -266,7 +269,8 @@ gsap.fromTo(
       trigger: ".imageandbubble-image2",
       start: "top bottom",
       end: "bottom top",
-      scrub: scrubValue,
+      scrub: 1,
+      markers: false,
     },
   }
 );
@@ -280,7 +284,8 @@ gsap.fromTo(
       trigger: ".imageandbubble-image3",
       start: "top bottom",
       end: "bottom top",
-      scrub: scrubValue,
+      scrub: 1,
+      markers: false,
     },
   }
 );
@@ -294,7 +299,8 @@ gsap.fromTo(
       trigger: ".imageandbubble-image4",
       start: "top bottom",
       end: "bottom top",
-      scrub: scrubValue,
+      scrub: 1,
+      markers: false,
     },
   }
 );
@@ -308,7 +314,8 @@ gsap.fromTo(
       trigger: ".imageandbubble-image5",
       start: "top bottom",
       end: "bottom top",
-      scrub: scrubValue,
+      scrub: 1,
+      markers: false,
     },
   }
 );
@@ -318,11 +325,13 @@ gsap.fromTo(
   { x: 0 },
   {
     x: -60,
+
     scrollTrigger: {
       trigger: ".imageandbubble-image6",
       start: "top bottom",
       end: "bottom top",
-      scrub: scrubValue,
+      scrub: 1,
+      markers: false,
     },
   }
 );
@@ -336,7 +345,8 @@ gsap.fromTo(
       trigger: ".imageandbubble-image7",
       start: "top bottom",
       end: "bottom top",
-      scrub: scrubValue,
+      scrub: 1,
+      markers: false,
     },
   }
 );
@@ -350,7 +360,8 @@ gsap.fromTo(
       trigger: ".imageandbubble-image8",
       start: "top bottom",
       end: "bottom top",
-      scrub: scrubValue,
+      scrub: 1,
+      markers: false,
     },
   }
 );
@@ -367,7 +378,8 @@ gsap.fromTo(
       trigger: ".imageandbubble-bubble6",
       start: "top bottom",
       end: "bottom top",
-      scrub: scrubValue,
+      scrub: 1,
+      markers: false,
     },
   }
 );
@@ -382,7 +394,8 @@ gsap.fromTo(
       trigger: ".imageandbubble-bubble7",
       start: "top bottom",
       end: "bottom top",
-      scrub: scrubValue,
+      scrub: 1,
+      markers: false,
     },
   }
 );
@@ -397,7 +410,8 @@ gsap.fromTo(
       trigger: ".imageandbubble-bubble8",
       start: "top bottom",
       end: "bottom top",
-      scrub: scrubValue,
+      scrub: 1,
+      markers: false,
     },
   }
 );
@@ -412,7 +426,8 @@ gsap.fromTo(
       trigger: ".imageandbubble-bubble9",
       start: "top bottom",
       end: "bottom top",
-      scrub: scrubValue,
+      scrub: 1,
+      markers: false,
     },
   }
 );
@@ -427,7 +442,8 @@ gsap.fromTo(
       trigger: ".imageandbubble-bubble10",
       start: "top bottom",
       end: "bottom top",
-      scrub: scrubValue,
+      scrub: 1,
+      markers: false,
     },
   }
 );
@@ -442,7 +458,8 @@ gsap.fromTo(
       trigger: ".bookdetails h2",
       start: "top bottom",
       end: "bottom top",
-      scrub: scrubValue,
+      scrub: 1,
+      markers: false,
     },
   }
 );
@@ -455,7 +472,8 @@ gsap.fromTo(
       trigger: ".bookdetails h2",
       start: "bottom bottom",
       end: "bottom 80%",
-      scrub: scrubValue,
+      scrub: 1,
+      markers: false,
     },
   }
 );
@@ -470,7 +488,8 @@ gsap.fromTo(
       trigger: ".footer-logo",
       start: "bottom bottom",
       end: "bottom 80%",
-      scrub: scrubValue,
+      scrub: 1,
+      markers: false,
     },
   }
 );
