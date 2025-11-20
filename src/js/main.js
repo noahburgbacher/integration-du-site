@@ -2,6 +2,82 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
+// ========== CUSTOM CURSOR ==========
+const cursor = document.querySelector(".cursor");
+let cursorX = 0;
+let cursorY = 0;
+
+// Create a hidden canvas to sample background colors
+const canvas = document.createElement("canvas");
+canvas.width = 1;
+canvas.height = 1;
+const ctx = canvas.getContext("2d");
+
+function getBackgroundColor(x, y) {
+  try {
+    // Draw a 1x1 pixel from the screen at the cursor position
+    ctx.drawImage(document.documentElement, x, y, 1, 1, 0, 0, 1, 1);
+    const imageData = ctx.getImageData(0, 0, 1, 1);
+    const [r, g, b] = imageData.data;
+    return { r, g, b };
+  } catch (e) {
+    // If canvas tainting occurs, default to black
+    return { r: 0, g: 0, b: 0 };
+  }
+}
+
+function getPerceivedBrightness(r, g, b) {
+  // Use relative luminance formula (WCAG)
+  return (r * 299 + g * 587 + b * 114) / 1000;
+}
+
+function updateCursorColor(x, y) {
+  if (!cursor) return;
+
+  const bgColor = getBackgroundColor(x, y);
+  const brightness = getPerceivedBrightness(bgColor.r, bgColor.g, bgColor.b);
+
+  // If background is darker than mid-gray (128), use white; otherwise use black
+  if (brightness < 128) {
+    cursor.style.backgroundColor = "#ffffff";
+  } else {
+    cursor.style.backgroundColor = "#000000";
+  }
+}
+
+// Track mouse movement
+document.addEventListener("mousemove", (e) => {
+  cursorX = e.clientX;
+  cursorY = e.clientY;
+
+  if (cursor) {
+    cursor.style.left = cursorX + "px";
+    cursor.style.top = cursorY + "px";
+    updateCursorColor(cursorX, cursorY);
+  }
+});
+
+// Detect hover on interactive elements
+const interactiveElements = document.querySelectorAll("a, button");
+interactiveElements.forEach((element) => {
+  element.addEventListener("mouseenter", () => {
+    if (cursor) cursor.classList.add("hovered");
+  });
+
+  element.addEventListener("mouseleave", () => {
+    if (cursor) cursor.classList.remove("hovered");
+  });
+});
+
+// Hide cursor when mouse leaves window
+document.addEventListener("mouseleave", () => {
+  if (cursor) cursor.style.opacity = "0";
+});
+
+document.addEventListener("mouseenter", () => {
+  if (cursor) cursor.style.opacity = "1";
+});
+
 const loadingWrapper =
   document.querySelector(".deletion") ||
   document.querySelector(".loading-bar-progress");

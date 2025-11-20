@@ -1,0 +1,34 @@
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
+  border: black 2px solid;
+}
+
+body {
+  cursor: none;
+}
+
+a,
+button,
+a:hover,
+button:hover,
+a:active,
+button:active {
+  cursor: none !important;
+}
+
+.cursor.hovered {
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+}
